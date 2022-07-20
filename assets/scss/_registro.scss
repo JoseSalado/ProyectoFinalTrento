@@ -1,0 +1,64 @@
+.bodyRegistro{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: "navbar navbar navbar"
+                         "headerRegistro headerRegistro headerRegistro "
+                         "mainRegistro mainRegistro mainRegistro "
+                         "asideRegistro asideRegistro asideRegistro"                         
+                         "footer       footer       footer ";
+    
+}
+
+
+.headerRegistro{
+
+    display: flex;
+    flex-direction: column;
+    grid-area: headerRegistro ;
+
+    h1{
+        color: white ;
+        text-align: center;
+        font-size: 45px;
+        background-color: $colorPrimario;
+        font-family: "Lobster";
+
+    }
+    
+}
+
+.mainRegistro{
+    display: flex;
+    flex-direction: column;
+    grid-area: mainRegistro;
+    align-items: center;
+    justify-content: center;
+    background-color: $colorSecundario;
+    margin-bottom: 10px;
+
+    .formularioRegistro{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin-top: 10px;
+
+
+        
+    }
+
+    
+}
+.asideRegistro{
+    display: flex;
+    flex-direction: column;
+    grid-area: asideRegistro;
+    background-color: rgb(223, 222, 222);
+    justify-content: center;
+    text-align: center;
+      img{
+          border-radius: 150px;
+         }
+}
+

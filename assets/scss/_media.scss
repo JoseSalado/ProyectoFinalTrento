@@ -1,0 +1,43 @@
+@media(min-width:768px){
+    .contenedor{
+
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 250px auto auto auto;
+        grid-template-areas: "header header header header"
+                              "navbar navbar navbar navbar"
+                              "main main aside aside "
+                              "main main  aside aside "
+                              "footer footer footer footer";
+     }
+
+    .bodyUbicacion{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar          navbar          navbar navbar"
+                         "headerUbicacion headerUbicacion headerUbicacion headerUbicacion"
+                         "mainUbicacion   mainUbicacion   asideUbicacion  asideUbicacion "
+                         "mainUbicacion   mainUbicacion   asideUbicacion  asideUbicacion "
+                         "footer          footer          footer          footer" ;
+    
+         .mainUbicacion{
+            iframe{
+                margin-top: 200px;
+            }
+         }                
+    }
+
+    .bodyregistro{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "navbar navbar navbar navbar"
+                             "headerRegistro headerRegistro headerRegistro headerRegistro"
+                             " mainRegistro mainRegistro asideRegistro asideRegistro"
+                             "mainRegistro mainRegistro asideregistro asideregistro"
+                             "footer footer footer footer " ;
+    }
+    
+   
+}

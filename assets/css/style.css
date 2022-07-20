@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Lobster&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  grid-area: footer;
+  background-color: rgb(223, 222, 222);
+}
+.footer h5 {
+  text-align: center;
+}
+.footer .imgRedes {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px auto auto;
+  grid-template-areas: "header header header" "navbar navbar navbar" "main main main " "aside aside aside " "footer footer footer";
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  grid-area: header;
+}
+.header img {
+  width: 100%;
+  height: 160px;
+}
+.header h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  background-color: rgb(148, 202, 148);
+  font-family: "Lobster";
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarjeta1 {
+  background-color: rgb(223, 222, 222);
+  border-style: solid;
+  border-color: white;
+  border-radius: 8px;
+  transition: all 1s;
+}
+.tarjeta1 img {
+  margin: 10px 15px 5px 30px;
+  width: 45%;
+}
+.tarjeta1 h5 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin: 15px 15px 15px 40px;
+  padding: 0px 0px 15px 15px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarjeta2 {
+  background-color: rgb(223, 222, 222);
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 8px;
+  transition: all 1s;
+}
+.tarjeta2 img {
+  margin: 10px 15px 5px 30px;
+  width: 45%;
+}
+.tarjeta2 h5 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin: 15px 15px 15px 40px;
+  padding: 0px 0px 5px 15px;
+}
+
+.tamanioTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bodyUbicacion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "navbar          navbar          navbar" "headerUbicacion headerUbicacion headerUbicacion" "mainUbicacion   mainUbicacion   mainUbicacion " "asideUbicacion  asideUbicacion  asideUbicacion " "footer           footer          footer";
+}
+
+.headerUbicacion {
+  display: flex;
+  flex-direction: column;
+  grid-area: headerUbicacion;
+}
+.headerUbicacion h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  background-color: rgb(148, 202, 148);
+  font-family: "Lobster";
+}
+
+.mainUbicacion {
+  display: flex;
+  background-color: rgb(148, 202, 148);
+  grid-area: mainUbicacion;
+}
+.mainUbicacion iframe {
+  margin-top: 10px;
+}
+
+.asideUbicacion {
+  display: flex;
+  flex-direction: column;
+  grid-area: asideUbicacion;
+  background-color: rgb(223, 222, 222);
+  justify-content: center;
+  text-align: center;
+}
+.asideUbicacion img {
+  border-radius: 150px;
+}
+
+.bodyRegistro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "navbar navbar navbar" "headerRegistro headerRegistro headerRegistro " "mainRegistro mainRegistro mainRegistro " "asideRegistro asideRegistro asideRegistro" "footer       footer       footer ";
+}
+
+.headerRegistro {
+  display: flex;
+  flex-direction: column;
+  grid-area: headerRegistro;
+}
+.headerRegistro h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  background-color: rgb(148, 202, 148);
+  font-family: "Lobster";
+}
+
+.mainRegistro {
+  display: flex;
+  flex-direction: column;
+  grid-area: mainRegistro;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 222, 222);
+  margin-bottom: 10px;
+}
+.mainRegistro .formularioRegistro {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.asideRegistro {
+  display: flex;
+  flex-direction: column;
+  grid-area: asideRegistro;
+  background-color: rgb(223, 222, 222);
+  justify-content: center;
+  text-align: center;
+}
+.asideRegistro img {
+  border-radius: 150px;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px auto auto auto;
+    grid-template-areas: "header header header header" "navbar navbar navbar navbar" "main main aside aside " "main main  aside aside " "footer footer footer footer";
+  }
+  .bodyUbicacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar          navbar          navbar navbar" "headerUbicacion headerUbicacion headerUbicacion headerUbicacion" "mainUbicacion   mainUbicacion   asideUbicacion  asideUbicacion " "mainUbicacion   mainUbicacion   asideUbicacion  asideUbicacion " "footer          footer          footer          footer";
+  }
+  .bodyUbicacion .mainUbicacion iframe {
+    margin-top: 200px;
+  }
+  .bodyregistro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar navbar navbar navbar" "headerRegistro headerRegistro headerRegistro headerRegistro" " mainRegistro mainRegistro asideRegistro asideRegistro" "mainRegistro mainRegistro asideregistro asideregistro" "footer footer footer footer ";
+  }
+}
